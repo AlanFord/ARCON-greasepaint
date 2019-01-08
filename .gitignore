@@ -10,6 +10,15 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# ARCON96 files
+*.rsf
+*.RSF
+*.cfd
+*.CFD
+*.met
+*.MET
+ARCON96F.EXE
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
