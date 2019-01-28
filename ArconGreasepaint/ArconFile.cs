@@ -96,16 +96,8 @@ namespace ArconGreasepaint
             ExpandedOutputFlag = 'n';
         }
 
-        public ArconFile(string longOldFileName, string longNewFileName)
+        public ArconFile(string longOldFileName, string longNewFileName) : this(longNewFileName)
         {
-            // this constructor is used when only a new file is requested
-            fileInfo = new FileInfo(longNewFileName);
-            // initialize parameters
-            AveragingIntervals = new Int32[intervalCount];
-            MinHours = new Int32[intervalCount];
-            WindSpeedDataType = WindSpeedEnum.mps;
-            ReleaseType = ReleaseTypeEnum.ground;
-            SetAllDefaults();
             ReadFile(longOldFileName);
         }
         private void SetAllDefaults()

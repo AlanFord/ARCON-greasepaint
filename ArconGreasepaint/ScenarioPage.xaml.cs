@@ -149,8 +149,6 @@ namespace ArconGreasepaint
 
         private void HandleMetFileNumberLostFocus(object sender, RoutedEventArgs e)
         {
-            // TODO some kind of error trapping on the number of met files
-            // if the number of met files is out of range, show a dialog box, reset to 1, and continue.
             Int32 bongo = Convert.ToInt32(MetFileNumber.Text);
             if (bongo < 1 || bongo > 10)
             {
